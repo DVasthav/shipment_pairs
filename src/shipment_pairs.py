@@ -34,7 +34,9 @@ def remove_intra(shipments):
     """remove_intra removes any records in which the origin and destination are the
     same country.
     """
-    pass
+    filtered_shipments=[shipment for shipment in shipments if shipment[1]!=[0]]
+    return filtered_shipments
+    
 
 
 def collect_pairs(shipments):
